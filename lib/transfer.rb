@@ -16,6 +16,7 @@ class Transfer
 
   def execute_transaction
     receiver.deposit(amount) << sender.withdraw(amount)
+    self.status == "complete"
   end
 
   def reverse_transfer
