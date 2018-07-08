@@ -32,8 +32,8 @@ class Transfer
 
   def reverse_transfer
     if valid? && self.sender.balance > amount && self.status == "complete"
-      self.receiver.deposit(amount)
       self.sender.withdraw(amount)
+      self.receiver.deposit(amount)
       self.status = "reversed"
     else
       reject_transfer
