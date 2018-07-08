@@ -4,10 +4,10 @@ class BankAccount
 
   ACCOUNT = []
 
-  def initialize(name, status="open")
+  def initialize(name)
     @name = name
     @balance = 1000
-    @status = status
+    @status = "open"
   end
 
   def deposit(amount)#double check later
