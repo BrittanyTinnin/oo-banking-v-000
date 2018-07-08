@@ -11,12 +11,12 @@ class BankAccount
   end
 
   def deposit(amount)#double check later
-    @balance += currency
+    @balance += amount
     ACCOUNT << balance
   end
 
   def withdraw(amount)
-    @balance -= currency
+    @balance -= amount
   end
 
   def display_balance
