@@ -20,7 +20,7 @@ class Transfer
       self.sender.withdraw(amount)
       self.status == "complete"
     else
-      
+      self.status == "rejected"
   end
 
   def reverse_transfer
