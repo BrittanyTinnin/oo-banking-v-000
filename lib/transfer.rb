@@ -15,7 +15,7 @@ class Transfer
   end
 
   def execute_transaction
-    sender.withdraw(amount)
+    receiver.deposit(amount) << sender.withdraw(amount)
   end
 
   def reverse_transfer
