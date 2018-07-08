@@ -2,8 +2,6 @@ class BankAccount
   attr_accessor :status, :balance
   attr_reader :name
 
-  ACCOUNT = []
-
   def initialize(name)
     @name = name
     @balance = 1000
@@ -12,7 +10,6 @@ class BankAccount
 
   def deposit(amount)#double check later
     @balance += amount
-    ACCOUNT << balance
   end
 
   def withdraw(amount)
