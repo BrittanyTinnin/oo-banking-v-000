@@ -18,7 +18,7 @@ class Transfer
     if valid? && self.sender.balance > amount && self.status == "pending"
       self.receiver.deposit(amount)
       self.sender.withdraw(amount)
-      self.status == "complete"
+      self.status = "complete"
     else
       self.status == "rejected"
     end
