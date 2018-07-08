@@ -17,7 +17,6 @@ class BankAccount
 
   def withdraw(currency)
     @balance -= currency
-    ACCOUNT << balance
   end
 
   def display_balance
