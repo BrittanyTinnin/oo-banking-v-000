@@ -37,4 +37,5 @@ class Transfer
     else
       reject_transfer
     end
+  end
 end
