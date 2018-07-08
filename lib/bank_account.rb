@@ -10,12 +10,12 @@ class BankAccount
     @status = "open"
   end
 
-  def deposit(currency)#double check later
+  def deposit(amount)#double check later
     @balance += currency
     ACCOUNT << balance
   end
 
-  def withdraw(currency)
+  def withdraw(amount)
     @balance -= currency
   end
 
